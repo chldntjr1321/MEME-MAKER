@@ -26,11 +26,11 @@ function onMove(event) {
   ctx.moveTo(event.offsetX, event.offsetY);
 }
 
-function onMouseDown(event) {
+function startPainting(event) {
   isPainting = true;
 }
 
-function onMouseUp(event) {
+function cancelPainting(event) {
   ctx.beginPath();
   isPainting = false;
 }
@@ -79,9 +79,9 @@ function onEraserClick() {
 }
 
 canvas.addEventListener("mousemove", onMove);
-canvas.addEventListener("mousedown", onMouseDown);
-canvas.addEventListener("mouseup", onMouseUp);
-canvas.addEventListener("mouseleave", onMouseUp);
+canvas.addEventListener("mousedown", startPainting);
+canvas.addEventListener("mouseup", cancelPainting);
+canvas.addEventListener("mouseleave", cancelPainting);
 canvas.addEventListener("click", onCanvasClick);
 lineWidth.addEventListener("change", onLineWidthChange);
 color.addEventListener("change", onColorChange);
