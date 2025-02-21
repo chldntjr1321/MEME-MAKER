@@ -73,7 +73,23 @@
         ➕ Add Photo
         <input type="file" accept="image/*" id="file" />
       </label>
-      <input type="text" placeholder="Write and then double click" id="text" />
+      <select name="font sytle" id="font-style">
+        <option value="">Font Style</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="serif">serif</option>
+        <option value="cursive">cursive</option>
+        <option value="system-ui">system-ui</option>
+      </select>
+      <select name="font size" id="font-size">
+        <option value="">Font Size</option>
+        <option value="20">20</option>
+        <option value="24">24</option>
+        <option value="48">48</option>
+        <option value="55">55</option>
+        <option value="68">68</option>
+        <option value="75">75</option>
+      </select>
+      <input type="text" placeholder="Write and double click" id="text" />
       <button id="save">📁 Save image</button>
     </div>
     <script src="app.js"></script>

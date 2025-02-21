@@ -1,5 +1,7 @@
 const saveBtn = document.getElementById("save");
 const textInput = document.getElementById("text");
+let fontStyle = document.getElementById("font-style");
+let fontSize = document.getElementById("font-size");
 const fileInput = document.getElementById("file");
 const modeBtn = document.getElementById("mode-btn");
 const destroyBtn = document.getElementById("destroy-btn");
